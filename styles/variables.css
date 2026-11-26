@@ -23,7 +23,7 @@
   --section-spacing: 40px;
 
   /* Размеры и геометрия */
-  --screen-min-height: 668px;
+  --screen-min-height: 668px; 
   --header-offset: min(10px, 20px - 2.6vw);
   --border-thickness: 1px;
 
