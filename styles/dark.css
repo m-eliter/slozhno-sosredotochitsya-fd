@@ -1,0 +1,82 @@
+
+/*
+  Цветовая схема тёмного оформления
+  и настройки декоративных элементов
+*/
+
+:root.theme-dark {
+  /* Основная цветовая палитра */
+  --surface-primary: var(--color-dark);
+  --color-emphasis: var(--color-highlight);
+  --heading-color: #db00ff;
+  --decoration-color: var(--color-highlight);
+
+  /* Оформление шапки и вопросов */
+  --header-label-background: var(--color-highlight);
+  --header-label-color: var(--color-dark);
+  --question-background: var(--color-dark);
+  --question-text-color: var(--color-highlight);
+
+  /* Стили ответов */
+  --answer-heading-background: var(--color-highlight);
+  --answer-heading-color: var(--color-dark);
+  --answer-content-background: var(--color-dark);
+  --answer-content-color: #f1b2ce;
+
+  /* Блок рекомендаций */
+  --recommendation-heading-background: var(--color-highlight);
+  --recommendation-heading-color: var(--color-dark);
+
+  /* Элементы управления и декор */
+  --control-accent: var(--color-highlight);
+  --record-indicator-color: var(--color-highlight);
+  --decoration-border-color: #FF007066;
+
+  /* Фоновое изображение */
+  --hero-background-image: url("../images/cover-image-dark.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Основная цветовая палитра */
+    --surface-primary: var(--color-dark);
+    --color-emphasis: var(--color-highlight);
+    --heading-color: #db00ff;
+    --decoration-color: var(--color-highlight);
+
+    /* Оформление шапки и вопросов */
+    --header-label-background: var(--color-highlight);
+    --header-label-color: var(--color-dark);
+    --question-background: var(--color-dark);
+    --question-text-color: var(--color-highlight);
+
+    /* Стили ответов */
+    --answer-heading-background: var(--color-highlight);
+    --answer-heading-color: var(--color-dark);
+    --answer-content-background: var(--color-dark);
+    --answer-content-color: #f1b2ce;
+
+    /* Блок рекомендаций */
+    --recommendation-heading-background: var(--color-highlight);
+    --recommendation-heading-color: var(--color-dark);
+
+    /* Элементы управления и декор */
+    --control-accent: var(--color-highlight);
+    --record-indicator-color: var(--color-highlight);
+    --decoration-border-color: #FF007066;
+
+    /* Фоновое изображение */
+    --hero-background-image: url("../images/cover-image-dark.png");
+  }
+
+  .rec::before,
+  .rec::after {
+    display: inline-block;
+  }
+}
+
+/* Отображение индикатора при ручном переключении темы */
+.theme-dark .rec::before,
+.theme-dark .rec::after {
+  display: inline-block;
+}

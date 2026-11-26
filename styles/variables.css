@@ -1,0 +1,33 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
+:root {
+    /* Основные цвета */
+  --color-accent: #FF8DCB;
+  --color-heading: #FFC2E6;
+  --color-background: #FFF1F7;
+  --color-highlight: #ff0070;
+  --color-dark: #000028;
+  --color-neutral: #353430;
+
+  /* Типографика */
+  --font-family-main: "IBM Plex Mono", "Arial", sans-serif;
+  --font-size-base: 18px;
+  --line-height-base: 100%;
+
+  /* Отступы и интервалы */
+  --gap-base: 10px;
+  --gap-decoration: clamp(10px, 2.65vw, 20px);
+  --section-spacing: 40px;
+
+  /* Размеры и геометрия */
+  --screen-min-height: 668px;
+  --header-offset: min(10px, 20px - 2.6vw);
+  --border-thickness: 1px;
+
+  /* Декоративные элементы */
+  --rec-indicator-offset: 30px;
+}
+
