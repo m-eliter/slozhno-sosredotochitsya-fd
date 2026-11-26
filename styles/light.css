@@ -1,12 +1,82 @@
+
 /*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
+  Цветовая схема светлого оформления
+  и настройки декоративных элементов
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  /* Основная цветовая палитра */
+  --surface-primary: var(--color-background);
+  --color-emphasis: var(--color-accent);
+  --heading-color: var(--color-heading);
+  --decoration-color: var(--color-neutral);
+
+  /* Оформление шапки и вопросов */
+  --header-label-background: var(--color-accent);
+  --header-label-color: var(--color-neutral);
+  --question-background: var(--color-background);
+  --question-text-color: var(--color-neutral);
+
+  /* Стили ответов */
+  --answer-heading-background: var(--color-accent);
+  --answer-heading-color: var(--color-neutral);
+  --answer-content-background: var(--color-background);
+  --answer-content-color: var(--color-neutral);
+
+  /* Блок рекомендаций */
+  --recommendation-heading-background: var(--color-accent);
+  --recommendation-heading-color: var(--color-neutral);
+
+  /* Элементы управления и декор */
+  --control-accent: var(--color-neutral);
+  --record-indicator-color: var(--color-neutral);
+  --decoration-border-color: #353430;
+
+  /* Фоновое изображение */
+  --hero-background-image: url("../images/cover-image-light.png");
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Основная цветовая палитра */
+    --surface-primary: var(--color-background);
+    --color-emphasis: var(--color-accent);
+    --heading-color: var(--color-heading);
+    --decoration-color: var(--color-neutral);
+
+    /* Оформление шапки и вопросов */
+    --header-label-background: var(--color-accent);
+    --header-label-color: var(--color-neutral);
+    --question-background: var(--color-background);
+    --question-text-color: var(--color-neutral);
+
+    /* Стили ответов */
+    --answer-heading-background: var(--color-accent);
+    --answer-heading-color: var(--color-neutral);
+    --answer-content-background: var(--color-background);
+    --answer-content-color: var(--color-neutral);
+
+    /* Блок рекомендаций */
+    --recommendation-heading-background: var(--color-accent);
+    --recommendation-heading-color: var(--color-neutral);
+
+    /* Элементы управления и декор */
+    --control-accent: var(--color-neutral);
+    --record-indicator-color: var(--color-neutral);
+    --decoration-border-color: #353430;
+
+    /* Фоновое изображение */
+    --hero-background-image: url("../images/cover-image-light.png");
+  }
+
+  .rec::before,
+  .rec::after {
+    display: none;
+  }
+}
+
+/* Скрытие индикатора при ручном переключении темы */
+.theme-light .rec::before,
+.theme-light .rec::after {
+  display: none;
 }
