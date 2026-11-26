@@ -1,1 +1,1 @@
-# slozhno-sosredotochitsya-fd
+https://github.com/m-eliter/slozhno-sosredotochitsya-fd
